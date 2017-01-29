@@ -22,7 +22,7 @@ h1, h2, h3 {
 }
 
 // Background gradient
-body, .navbar {
+.navbar, .home-callout {
   // Gradient provided by uigradients.com "EndlessRiver" - http://uigradients.com/#EndlessRiver
   background: #43cea2; /* fallback for old browsers */
   background: -webkit-linear-gradient(to left, #43cea2 , #185a9d); /* Chrome 10-25, Safari 5.1-6 */
@@ -31,4 +31,12 @@ body, .navbar {
 
 .navbar {
   border: none;  // removes the bottom border line that was separating the gradient from being fluid betwee navabar and body.
+  //margin-bottom: 0;  //instead of doing this, I'm doing -20 on the homepage top... to keep the margin there still for other pages.
+}
+
+.home-callout {
+  color: white;
+  margin-top: -20px;
+  padding-top: 20px;
+  padding-bottom: 50px;
 }
