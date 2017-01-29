@@ -24,7 +24,7 @@
           <!-- Using the Rails way below    
           <a href="/" class="navbar-brand"><i class="fa fa-cube"></i> MemBox</a>
           -->
-          <%= link_to "/", class: "navbar-brand" do %>
+          <%= link_to root_path, class: "navbar-brand" do %>
             <i class="fa fa-cube"></i> MemBox
           <% end %>
           <!-- This adds the lines in the do loop to an anchor/link -->
@@ -36,7 +36,7 @@
             <!-- Rails way below  
               <li><a href="/about">About</a></li> 
             -->
-            <li><%= link_to "About", "/about" %></li> 
+            <li><%= link_to "About", about_path %></li> 
             
           </ul>
         </div><!-- /.navbar-collapse -->
@@ -45,6 +45,6 @@
 
     <%= yield %>
 
-  
+
   </body>
 </html>
