@@ -34,6 +34,26 @@ h1, h2, h3 {
   //margin-bottom: 0;  //instead of doing this, I'm doing -20 on the homepage top... to keep the margin there still for other pages.
 }
 
+// The logo in the top-left of the navbar.
+.navbar-default .navbar-brand {
+  color: white;
+}
+
+// The links in the top-right of the navbar.  eg, About, Contact, etc.
+.navbar-default .navbar-nav > li > a {
+  color: white;
+}
+
+.navbar-default .navbar-brand:hover {
+  color: white;
+  opacity: .75;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+  color: white;
+  opacity: .75;
+}
+
 .home-callout {
   color: white;
   margin-top: -20px;
