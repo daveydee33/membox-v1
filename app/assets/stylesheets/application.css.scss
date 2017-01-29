@@ -17,6 +17,7 @@
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
 
+// Typography styles
 h1, h2, h3 {
   font-family: 'Open Sans', sans-serif;
 }
@@ -29,31 +30,24 @@ h1, h2, h3 {
   background: linear-gradient(to left, #43cea2 , #185a9d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+// Navbar
 .navbar {
   border: none;  // removes the bottom border line that was separating the gradient from being fluid betwee navabar and body.
   //margin-bottom: 0;  //instead of doing this, I'm doing -20 on the homepage top... to keep the margin there still for other pages.
 }
 
-// The logo in the top-left of the navbar.
-.navbar-default .navbar-brand {
-  color: white;
-}
-
-// The links in the top-right of the navbar.  eg, About, Contact, etc.
+// Navbar top-left logo text
+// Navbar top-right links (About, Contact)
+.navbar-default .navbar-brand, 
 .navbar-default .navbar-nav > li > a {
   color: white;
+  &:hover {
+    color: white;
+    opacity: .75;
+  }
 }
 
-.navbar-default .navbar-brand:hover {
-  color: white;
-  opacity: .75;
-}
-
-.navbar-default .navbar-nav > li > a:hover {
-  color: white;
-  opacity: .75;
-}
-
+// Home page
 .home-callout {
   color: white;
   margin-top: -20px;
