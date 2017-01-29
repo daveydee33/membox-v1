@@ -20,3 +20,15 @@
 h1, h2, h3 {
   font-family: 'Open Sans', sans-serif;
 }
+
+// Background gradient
+body, .navbar {
+  // Gradient provided by uigradients.com "EndlessRiver" - http://uigradients.com/#EndlessRiver
+  background: #43cea2; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #43cea2 , #185a9d); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #43cea2 , #185a9d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.navbar {
+  border: none;  // removes the bottom border line that was separating the gradient from being fluid betwee navabar and body.
+}
