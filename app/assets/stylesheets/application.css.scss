@@ -54,6 +54,20 @@ h1, h2, h3 {
   }
 }
 
+// Navbar top-right (small screen) - hamburger patties when you shrink screen size
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: white;
+}
+
+// Navbar top-right (small screen) - the square menu border
+.navbar-default .navbar-toggle {
+  border: 2px solid white;  // See "shorthand" http://www.w3schools.com/css/css_border.asp
+  &:hover, &:focus {
+    background-color: #43cea2;  // the light green in far-right of background gradient.  nice suttle hover effect
+  }
+  
+}
+
 // Home page
 .home-callout {
   color: white;
