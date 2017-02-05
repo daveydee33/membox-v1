@@ -31,6 +31,16 @@
     <%= @word.status %>
   </p>
   
+  <p>
+    <strong>Created:</strong>
+    <%= @word.created_at %>
+  </p>
+  
+  <p>
+    <strong>Updated:</strong>
+    <%= @word.updated_at %>
+  </p>
+  
   <%= link_to 'Edit', edit_word_path(@word) %> |
   <%= link_to 'Back', words_path %>
 </div>
