@@ -1,34 +1,36 @@
-<p id="notice"><%= notice %></p>
-
-<p>
-  <strong>Word:</strong>
-  <%= @word.word %>
-</p>
-
-<p>
-  <strong>Definition:</strong>
-  <%= @word.definition %>
-</p>
-
-<p>
-  <strong>Sentence:</strong>
-  <%= @word.sentence %>
-</p>
-
-<p>
-  <strong>Notes:</strong>
-  <%= @word.notes %>
-</p>
-
-<p>
-  <strong>Tags:</strong>
-  <%= @word.tags %>
-</p>
-
-<p>
-  <strong>Status:</strong>
-  <%= @word.status %>
-</p>
-
-<%= link_to 'Edit', edit_word_path(@word) %> |
-<%= link_to 'Back', words_path %>
+<div class="container">
+  <p id="notice"><%= notice %></p>
+  
+  <p>
+    <strong>Word:</strong>
+    <%= @word.word %>
+  </p>
+  
+  <p>
+    <strong>Definition:</strong>
+    <%= @word.definition %>
+  </p>
+  
+  <p>
+    <strong>Sentence:</strong>
+    <%= @word.sentence %>
+  </p>
+  
+  <p>
+    <strong>Notes:</strong>
+    <%= @word.notes %>
+  </p>
+  
+  <p>
+    <strong>Tags:</strong>
+    <%= @word.tags %>
+  </p>
+  
+  <p>
+    <strong>Status:</strong>
+    <%= @word.status %>
+  </p>
+  
+  <%= link_to 'Edit', edit_word_path(@word) %> |
+  <%= link_to 'Back', words_path %>
+</div>
